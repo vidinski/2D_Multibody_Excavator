@@ -1,24 +1,22 @@
 This version only supports revolute joints. 
-
 Script uses the body coordinate method and was written using the contents of: 
 
 "Planar Multibody Dynamics: Forumlation, Programming, and Application" 
 by Parviz E. Nikravesh
 
+DOWNLOAD SCIPY, NUMPY, AND MATPLOTLIB
 
 ******************************************************************************************
-The current code presents the acrobot problem 
-(double pendulum actuated at the "elbow" joint). 
+This code presents an example of a hydraulic excavator with 3 pistons 
 ******************************************************************************************
-Edit Main.py for setting up bodies and joints. Edit the forces in the "forces" function of solver.py
-The animation can then be ran. 
+-Edit Main.py for setting up bodies and joints. 
+-Edit the forces in the "forces" function of solver.py
+-Create new joints by solving for the first and second derivative of the contraint equations in body_coordinates.py 
+-The animation can be seen by running the Main.py script 
 
 *******************************************************************************************
 Edit the links' center of mass, initial conditions, etc. example: 
 *******************************************************************************************
-
-
-
 ###########################################################################################
 					#SETUP BODIES
 ###########################################################################################
