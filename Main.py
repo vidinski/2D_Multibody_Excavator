@@ -92,15 +92,15 @@ time_text = ax1.text(0.05, 0.9, '', transform=ax1.transAxes)
 
 ax1.set_ylim(-2,8)
 ax1.set_xlim(-4,6)
-background1 = patches.Rectangle([-50., 0.], 100.0*2., 50.0*2., 0.0, color = 'blue', alpha = 0.35)
-background2 = patches.Rectangle([-50., 0.], 100.0*2., -50.0*2., 0.0, color = 'green', alpha = 0.5)
+background1 = patches.Rectangle([-50., 0.], 100.0*2., 50.0*2., color = 'blue', alpha = 0.35)
+background2 = patches.Rectangle([-50., 0.], 100.0*2., -50.0*2., color = 'green', alpha = 0.5)
 background3 = patches.Polygon(np.array([[0.,0.9],[0.0,2.4],[-0.6, 3.0],[-1.2,3.0],[-1.8,2.1],[-2.4,1.5],[-2.4,0.9]]), edgecolor='black', facecolor='orange')
 background4 = patches.Polygon(np.array([[0.9,0.0],[0.9+0.3*np.cos(PI/4.),0.3-0.3*np.sin(PI/4.)],
 			                [1.2, 0.3],[0.9+0.3*np.cos(PI/4.),0.3+0.3*np.sin(PI/4.)],
 					[0.9,0.6],[-3.0,0.6],
 					[-3.0-0.3*np.cos(PI/4.),0.3+0.3*np.sin(PI/4.)],[-3.3,0.3],
 					[-3.0-0.3*np.cos(PI/4.),0.3-0.3*np.sin(PI/4.)],[-3.,0.0]]), color='black')
-background5 = patches.Rectangle([-1.5, 0.6], 0.9, 0.3, 0.0, edgecolor = 'orange', facecolor = 'black')
+background5 = patches.Rectangle([-1.5, 0.6], 0.9, 0.3, edgecolor = 'orange', facecolor = 'black')
 
 background1 = ax1.add_patch(background1)
 background2 = ax1.add_patch(background2)

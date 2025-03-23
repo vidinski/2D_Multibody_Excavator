@@ -66,9 +66,9 @@ def solveSys(t,x):
 		   		              np.matrix(q[joint_list[i].body_i[0]-1,:]), 
                                               np.matrix(q[joint_list[i].body_j[0]-1,:]),
                                               tnb)
-	         D = np.concatenate((D,Jacij),axis = 0)
-	         gammaij = np.transpose(np.matrix(gammaij))
-	         gamma = np.concatenate((gamma,gammaij),axis = 0)
+                 D = np.concatenate((D,Jacij),axis = 0)
+                 gammaij = np.transpose(np.matrix(gammaij))
+                 gamma = np.concatenate((gamma,gammaij),axis = 0)
     else:
         [Jacij, gammaij] = BC_constraints(bodies[joint_list[0].body_i[0]],
 		          	      joint_list[0].body_i[1],
@@ -81,7 +81,7 @@ def solveSys(t,x):
         
 
         D = Jacij
-	gamma = np.transpose(np.matrix(gammaij))
+        gamma = np.transpose(np.matrix(gammaij))
 
         if len(joint_list) > 1: 
            for i in range (1,len(joint_list)):  
@@ -94,9 +94,9 @@ def solveSys(t,x):
 		   		              np.matrix(q[joint_list[i].body_i[0]-1,:]), 
                                               np.matrix(q[joint_list[i].body_j[0]-1,:]),
                                               tnb)
-	         D = np.concatenate((D,Jacij),axis = 0)
-	         gammaij = np.transpose(np.matrix(gammaij))
-	         gamma = np.concatenate((gamma,gammaij),axis = 0)
+                 D = np.concatenate((D,Jacij),axis = 0)
+                 gammaij = np.transpose(np.matrix(gammaij))
+                 gamma = np.concatenate((gamma,gammaij),axis = 0)
     
     #################   COMPUTE FORCES   ########################################################   
 
